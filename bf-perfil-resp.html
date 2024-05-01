@@ -13,45 +13,119 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="bf-perfil-resp.css">
+        <link rel="stylesheet" href="bf-perfil-resp.css">  
     </head>
     <body>
         <!-- *** CABEÇALHO ***-->
         <div class="logo">
-            <h1> Tá na H
-                <img src="https://th.bing.com/th?id=OIP.43RqL_WAgNNGE5JmdBEtyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Relogio Animado.">
-                ra... 
-            </h1>
-            <h6> Uma forma DIVERTIDA de Interação em Família
-            </h6>
+          <h1> Tá na H
+            <img src="https://th.bing.com/th?id=OIP.43RqL_WAgNNGE5JmdBEtyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Relogio Animado."> ra... 
+          </h1>
+          <h6> Uma forma DIVERTIDA de Interação em Família
+          </h6>
         </div>
         <!-- *** MENU *** -->
         <div class="menu">
-            <div class="button-menu">
-                <button><a data-anchor="product" href="ba-home-resp.html"> Home </a></button>
-                <button><a data-anchor="product" href="bf-perfil-resp.html"> Perfil </a></button> 
-                <button><a data-anchor="product" href="bb-ativi-resp.html"> Atividade </a></button> 
-                <button><a data-anchor="product" href="bc-pont-resp.html"> Pontuação </a></button> 
-                <button><a data-anchor="product" href="bd-gps-resp.html"> GPS </a></button> 
-                <button><a data-anchor="product" href="be-sobre-resp.html"> Sobre </a></button>
-                <button><a data-anchor="product" href="bf-perfil-resp.css"> Sair </a></button>
+          <div class="button-menu">
+            <button><a data-anchor="product" href="ba-home-resp.html"> Home </a></button>
+            <button><a data-anchor="product" href="bf-perfil-resp.html"> Perfil </a></button> 
+            <button><a data-anchor="product" href="bb-ativi-resp.html"> Atividade </a></button> 
+            <button><a data-anchor="product" href="bc-pont-resp.html"> Pontuação </a></button> 
+            <button><a data-anchor="product" href="bd-gps-resp.html"> GPS </a></button> 
+            <button><a data-anchor="product" href="be-sobre-resp.html"> Sobre </a></button>
+          </div>
+        </div>
+        <div class="perfil-confi">
+            <div class="Configurações">
+                <section class="acoes">
+                    <il>
+                        <li><button><a  href="#">Configurações</a></button></li>
+                        <li><button><a  href="#">Alterar Senha</a></button></li>
+                        <li><button><a  href="#">Redefinir Senha</a></button></li>
+                        <li><button><a  href="aa-home-page.html"> Sair </a></button></li>
+                    </il>
+                </section>
+                
+            </div>
+    
+            <div class="perfil">
+                <div class="profile">
+                    <div class="profile-picture">
+                        <img id="profile-img" src="https://www.bing.com/th?id=OIP.arDu__RxSSyrrV95y7ymEgHaHv&w=86&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Profile Picture">
+                    </div>
+                    <div class="adici">
+                        <input type="file" id="img-upload" accept="image/*">
+                        <label for="img-upload" class="upload-label">Adicionar Foto</label>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Nome do Usuário</h2>
+                        <p>Email: example@example.com</p>
+                        <p>Localização: Algum lugar</p>
+                    </div>
+                </div>
+                <script src="java.js"></script>
             </div>
         </div>
-        <hr>
-        <div class="profile">
-            <div class="profile-picture">
-                <img id="profile-img" src="https://www.bing.com/th?id=OIP.arDu__RxSSyrrV95y7ymEgHaHv&w=86&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Profile Picture">
+        <main>
+            <div class="editar">
+                <h1> Editar Perfil </h1>
             </div>
-            <div class="adici">
-                <input type="file" id="img-upload" accept="image/*">
-                <label for="img-upload" class="upload-label">Adicionar Foto</label>
-            </div>
-            <div class="profile-info">
-                <h2>Nome do Usuário</h2>
-                <p>Email: example@example.com</p>
-                <p>Localização: Algum lugar</p>
-            </div>
-        </div>
-        <script src="java.js"></script>
+            
+            <section class="dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <form action="#">
+                    <div class="campo">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+    
+                    <div class="campo">
+                        <label for="data-nascimento">Data de Nasc.:</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" required>
+                    </div>
+    
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+    
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="campo">
+                        <label for="genero">Sexo:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+    
+                    <button type="submit">Salvar Alterações</button>
+                </form>
+            </section>
+            <section class="dependentes">
+                <h2>Dependentes</h2>
+                <table class="tabela-dependentes">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Login</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button id="adicionar-dependente">Adicionar Dependente</button>
+            </section>
+    
+            
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
+

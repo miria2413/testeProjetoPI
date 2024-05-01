@@ -94,42 +94,44 @@
             </div>
           </div>
         </div>
-        <div class="button-menu">
-          <ul id="lista-itens">
-
-            <!-- Aqui serão exibidos os itens adicionados -->
-
-          </ul>
-          <input type="text" id="novo-item" placeholder="Digite o novo item">
-          <button id="botao-adicionar">Adicionar Item</button>
-          <script>
-            document.addEventListener('DOMContentLoaded', function() {
-              const botaoAdicionar = document.getElementById('botao-adicionar');
-              const listaItens = document.getElementById('lista-itens');
-              const inputNovoItem = document.getElementById('novo-item');
-
-              // Função para adicionar um novo item
-              function adicionarItem() {
-                const novoItemTexto = inputNovoItem.value.trim(); // Obtemos o texto do novo item
-                if (novoItemTexto !== '') { // Verificamos se o campo não está vazio
-                  const novoItem = document.createElement('li');
-                  novoItem.textContent = novoItemTexto;
-                  // Botão de remoção
-                  const botaoRemover = document.createElement('button');
-                  botaoRemover.textContent = 'Remover';
-                  botaoRemover.addEventListener('click', function() {
-                    listaItens.removeChild(novoItem); // Remove o item da lista
-                  });
-      
-                  novoItem.appendChild(botaoRemover); // Adiciona o botão de remoção ao item
-                  listaItens.appendChild(novoItem); // Adiciona o item à lista
-                  inputNovoItem.value = ''; // Limpa o campo de entrada
+        <div class="adicionar">
+          <div class="button-menu">
+            <ul id="lista-itens">
+  
+              <!-- Aqui serão exibidos os itens adicionados -->
+  
+            </ul>
+            <input type="text" id="novo-item" placeholder="Digite o novo item">
+            <button id="botao-adicionar">Adicionar Item</button>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const botaoAdicionar = document.getElementById('botao-adicionar');
+                const listaItens = document.getElementById('lista-itens');
+                const inputNovoItem = document.getElementById('novo-item');
+  
+                // Função para adicionar um novo item
+                function adicionarItem() {
+                  const novoItemTexto = inputNovoItem.value.trim(); // Obtemos o texto do novo item
+                  if (novoItemTexto !== '') { // Verificamos se o campo não está vazio
+                    const novoItem = document.createElement('li');
+                    novoItem.textContent = novoItemTexto;
+                    // Botão de remoção
+                    const botaoRemover = document.createElement('button');
+                    botaoRemover.textContent = 'Remover';
+                    botaoRemover.addEventListener('click', function() {
+                      listaItens.removeChild(novoItem); // Remove o item da lista
+                    });
+        
+                    novoItem.appendChild(botaoRemover); // Adiciona o botão de remoção ao item
+                    listaItens.appendChild(novoItem); // Adiciona o item à lista
+                    inputNovoItem.value = ''; // Limpa o campo de entrada
+                  }
                 }
-              }
-              // Associar a função de adicionar ao clique do botão
-              botaoAdicionar.addEventListener('click', adicionarItem);
-            });
-          </script>
+                // Associar a função de adicionar ao clique do botão
+                botaoAdicionar.addEventListener('click', adicionarItem);
+              });
+            </script>
+          </div>
         </div>
       </div>
     </div>
@@ -153,7 +155,8 @@
         <option value="pending">Pendente</option>
         <option value="completed">Concluída</option>
       </select>
-      <input type="file" id="task-file" accept="image/*">
+      <input  id="task-file" type="file" accept="image/*">
+      <input type="submit">
     </div>
     <script src="java.js"></script>
     <div class="task-form">
@@ -161,7 +164,8 @@
       <button onclick="addTask()">Conclusão da Atividade</button>
     </div>
     <script src="java.js"></script>
-    <h1> Atividades Semanais</h1>
+    <div class="sugestao-tarefas">
+      <h1> Atividades Semanais</h1>
     <h2>Atividades Lúdicas Semanais</h2>
     <ul>
       <li><strong>Segunda-feira:</strong> Passeio no parque</li>
@@ -198,6 +202,7 @@
         <li><input type="checkbox"> Fazer um curso online</li>
       </ul>
     </div> 
+    </div>
     <div>
 
     </div>

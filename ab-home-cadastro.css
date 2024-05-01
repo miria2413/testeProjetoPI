@@ -271,3 +271,78 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*grafico pizza*/
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #ec85a2 0% 60%,
+        #545355 60% 75%,
+        rgb(169, 239, 246) 75% 100%
+        
+    );
+}
+
+.rosa {
+    color: #ec85a2;
+}
+
+.cinza {
+    color: #545355;
+}
+.azul {
+    color:rgb(169, 239, 246) ;
+}
+/*grafico torre*/
+/*.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    background-color: #0074d9;
+    transition: height 0.5s;
+}
+
+.bar:hover {
+    height: 150px;
+}*/
